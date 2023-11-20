@@ -12,14 +12,8 @@ function randomColor(length) {
         result += characters.charAt(Math.floor(Math.random() * charactersLength));
     }
 
-    document.body.innerHTML = document.body.innerHTML.replace(wait, result);
-    document.getElementById("color").style.color = result;
-}
-
-function getYourColor() {
-    let getColor = document.getElementById("yourColor");
-    resultTyped = getColor.value;
-
-    document.body.innerHTML = document.body.innerHTML.replace("??????", resultTyped);
-    document.getElementById("getHere").style.color = resultTyped;
+    const coloring = document.querySelector('h2');
+    coloring.textContent = "#"+ result;
+    coloring.style.color = result;
+    
 }

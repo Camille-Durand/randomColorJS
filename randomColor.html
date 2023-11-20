@@ -3,18 +3,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="./main.js" async></script>
-        <title>RandomColor</title>
+        <title>RandomColorJS</title>
     </head>
     <body onload="randomColor(6)">
         <center>
-            <h1>RandomColor</h1>
-            <h4>Donne une couleur random (pour changer de couleur: refresh la page)</h4>
+            <h1>RandomColorJS</h1>
             <h2 id="color">#?</h2>
-            <p>... ou ...</p>
-            <label for="yourColor">Code hexa d'une couleur (marche 1 fois):</label>
-            <input type="yourColor" id="yourColor" name="yourColor" placeholder="#hexa">
-            <input type="button" id="bt"value="Valider" id="bt" onclick="getYourColor()">
-            <h2 id="getHere">#??????</h2>
+            <button onclick="randomColor(6)">Changer de couleur</button>
         </center>
     </body>
 </html>
