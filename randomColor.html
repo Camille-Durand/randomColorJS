@@ -8,9 +8,12 @@
             .square {
               height: 50px;
               width: 100px;
-              background-color: #555;
+              background-color: #fff;
               border-radius: 20%;
               margin-bottom: 20px;
+            }
+            button {
+                margin: 10px;
             }
             </style>
     </head>
@@ -25,9 +28,13 @@
             </div>
 
             <div id="save">
-                <button onclick="saveColor()">Save</button>
-                <h4>Pas de couleur sauvegardée rn</h4>
+                <button onclick="saveColor()">Save la couleur</button>
+                <h4 style="color: #fff;">Y a rien</h4>
                 <div class="square"></div>
+            </div>
+
+            <div id="night">
+                <button onclick="nightMode()">Light/Darkmode</button>
             </div>
         </center>
     </body>
