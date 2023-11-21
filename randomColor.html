@@ -4,12 +4,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="./main.js" async></script>
         <title>RandomColorJS</title>
+        <style>
+            .square {
+              height: 50px;
+              width: 100px;
+              background-color: #555;
+              border-radius: 20%;
+              margin-bottom: 20px;
+            }
+            </style>
     </head>
     <body onload="randomColor(6)">
         <center>
             <h1>RandomColorJS</h1>
-            <h2 id="color">#?</h2>
-            <button onclick="randomColor(6)">Changer de couleur</button>
+
+            <div id="load">
+                <h2 id="color">#??????</h2>
+                <div class="square"></div>
+                <button onclick="randomColor(6)">Changer de couleur</button>
+            </div>
+
+            <div id="save">
+                <button onclick="saveColor()">Save</button>
+                <h4>Pas de couleur sauvegardée rn</h4>
+                <div class="square"></div>
+            </div>
         </center>
     </body>
 </html>

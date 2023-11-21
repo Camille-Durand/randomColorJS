@@ -1,8 +1,5 @@
 const characters ='0123456789ABCDEF';
-let wait = "??????";
-document.body.innerHTML = document.body.innerHTML.replace("?", wait);
-
-let resultTyped = '';
+const squared = document.querySelectorAll("div");
 
 function randomColor(length) {   
     result = '';
@@ -15,5 +12,15 @@ function randomColor(length) {
     const coloring = document.querySelector('h2');
     coloring.textContent = "#"+ result;
     coloring.style.color = result;
-    
+
+    squared[1].style.backgroundColor = result;   
+
+    return result;
+}
+
+function saveColor() {
+    squared[3].style.backgroundColor = result;
+    const saving = document.querySelector("h4");
+    saving.textContent = "#" + result;
+    saving.style.color = result;
 }
